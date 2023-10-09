@@ -1,0 +1,123 @@
+@import url('variables.css');
+
+
+body{
+    background-color: var(--background-letra-N);
+    font-family: var(--font);
+    margin-top: var(--rem2);
+    margin-bottom: var(--rem2);
+    margin-left: var(--rem2);
+}
+
+h2{
+    font-family: var(--font);
+    font-size: var(--grande);
+    font-weight: var(--regular);
+}
+
+p{
+    font-family: var(--font);
+    font-size: var(--normal);
+    font-weight: var(--extra-light);
+}
+
+button{
+    font-family: var(--font);
+    font-size: var(--normal);
+    font-weight: var(--regular);
+    border-radius: var(--border-radio);
+    padding-top: var(--rem05);
+    padding-bottom: var(--rem05);
+    width: 250px;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    cursor: pointer;
+    transition: all 0.4s;
+}
+
+/*Clases------------------------------------------*/
+
+/*Encripta*/
+.encriptador, .encripta{
+    display: flex;
+}
+
+.encripta{
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2rem;
+}
+
+.logo_alura{
+    height: 48px;
+}
+
+.encripta-text{
+    font-family: var(--font);
+    background-color: transparent;
+    border: none;
+    font-size: var(--normal);
+    height: 100%;
+    width: 600px;
+    color: var(--background-letra-B);
+    appearance: none;
+    -webkit-appearance: none;
+}
+
+.encripta-text:focus{
+    outline: none;
+}
+
+.encripta_grupo_p{
+    color: var(--secundario-B);
+    font-size: var(--normal-m);
+}
+
+.encripta_botones{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.encripta_botonPrincipal{
+    background-color: var(--principal);
+}
+
+.encripta_botonPrincipal:hover{
+    box-shadow: var(--sombra-boton);
+}
+
+.encripta_botonSecundario{
+    background-color: var(--background-letra-B);
+    border: var(--borde-linea);
+}
+
+.encripta_botonSecundario:hover{
+    background-color: var(--principal);
+    box-shadow: var(--sombra-boton);
+}
+
+/*Desencripta*/
+.desencripta{
+    position: relative;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    margin-left: var(--rem2);
+    font: 1em sans-serif;
+    background-color: var(--background-letra-B);
+    box-shadow: var(--sombra-principal);
+    padding: 5rem;
+    border-bottom-left-radius: var(--border-radio);
+    border-top-left-radius: var(--border-radio);
+    gap: var(--rem05)
+    
+}
+
+.desencripta_img{
+    align-items: center;
+    width: 300px;
+}
+
