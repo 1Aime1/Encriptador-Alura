@@ -52,7 +52,7 @@ btnEncripta.addEventListener("click", () => {
 });
 
 btnDesencripta.addEventListener("click", () => {
-    const text = texto.value; 
+    const text = texto.value;
     // console.log(text);
 
     if(text != ""){
@@ -65,7 +65,7 @@ btnDesencripta.addEventListener("click", () => {
             return nuevoText;
         };
         resultado.innerHTML = desencriptarTexto(text);
-        alEncriptar();
+        alEncriptar()
     } else {
         alert("Ingrese texto para encriptar")
         alDesencriptar();
@@ -73,10 +73,22 @@ btnDesencripta.addEventListener("click", () => {
 });   
 
 
-iconCopy.addEventListener("click", ()=>{
-    var copy= resultado;
-    copy.select();
-    document.execCommand('iconCopy');
-    alert("Texto Copiado");
-    alDesencriptar();
-});
+iconCopy.addEventListener("click", copiar = ()=>{
+    const text = resultado; 
+    const range = document.createRange();/*rango dde seleccion*/
+    range.selectNode(text);
+
+    window.getSelection().removeAllRanges();
+    window.getSelection().addRange(range);
+
+    document.execCommand('copy');/*copiar*/
+    window.getSelection().removeAllRanges();
+})
+
+const mostrarTooltip = ()=>{
+    iconCopy.style.visibility = "visible";
+    setTimeout(() => {
+        iconCopy.style.visibility = "hidden";
+    }, 2000); 
+}
+

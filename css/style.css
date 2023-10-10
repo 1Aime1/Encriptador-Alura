@@ -100,6 +100,34 @@ button{
 .encripta__grupo__p{
     color: var(--secundario-B);
     font-size: var(--normal-m);
+    display: flex;
+    align-items: center;
+}
+.encripta__grupo__p > svg{
+    margin-right: var(--rem05);
+}
+.desencripta__tooltip {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+.desencripta__tooltip:hover .desencripta__tooltiptext {
+    visibility: visible;
+}
+.desencripta__tooltiptext{
+    visibility: hidden;
+    background-color: var(--secundario-B);
+    color: var(--background-letra-N);
+    text-align: center;
+    border-radius: var(--border-radio);
+    padding: var(--rem05);
+    position: absolute;
+    z-index: 1;
+    bottom: 5%;
+    left: 20%;
+    margin-left: -60px;
+    opacity: 0.9;
+    transition: opacity 0.4s;
 }
 
 .encripta__botones{
@@ -158,11 +186,11 @@ button{
 }
 
 .desencripta__iconCopy{
-    width: 32px;
+    width: 25px;
     margin-bottom: var(--rem1);
+    color: var(--background-letra-N);
     cursor: pointer;
-    background-color: var(--background-letra-B);
-    transition: 0.4s all;
+    transition: 0.4s all !important;
 }
 
 .desencripta__iconCopy:hover{
