@@ -36,6 +36,32 @@ button{
     transition: all 0.4s;
 }
 
+/*Barra Scroll*/
+*::-webkit-scrollbar {
+	-webkit-appearance: none;
+}
+*::-webkit-scrollbar:vertical {
+	width: 8px;
+	background: none;
+}
+*::-webkit-scrollbar-button:increment,
+*::-webkit-scrollbar-button {
+	display: none;
+}
+*::-webkit-scrollbar:horizontal {
+	height: 5px;
+	background: none;
+	border-radius: 100px;
+}
+*::-webkit-scrollbar-thumb {
+	background-color: var(--secundario-B);
+	border-radius: 20px;
+	border: none;
+}
+*::-webkit-scrollbar-track {
+	border-radius: 500px;
+}
+
 /*Clases------------------------------------------*/
 
 /*Encripta*/
@@ -49,60 +75,62 @@ button{
     gap: 2rem;
 }
 
-.logo_alura{
+.logo__alura{
     height: 48px;
 }
 
-.encripta-text{
+.encripta__text{
     font-family: var(--font);
     background-color: transparent;
     border: none;
     font-size: var(--normal);
-    height: 100%;
+    height: 350px;
     width: 600px;
     color: var(--background-letra-B);
     appearance: none;
     -webkit-appearance: none;
+    resize: none;
 }
 
-.encripta-text:focus{
+.encripta__text:focus{
     outline: none;
 }
 
-.encripta_grupo_p{
+
+.encripta__grupo__p{
     color: var(--secundario-B);
     font-size: var(--normal-m);
 }
 
-.encripta_botones{
+.encripta__botones{
     width: 100%;
     display: flex;
     justify-content: space-between;
 
 }
 
-.encripta_botonPrincipal{
+.encripta__botonPrincipal{
     background-color: var(--principal);
 }
 
-.encripta_botonPrincipal:hover{
+.encripta__botonPrincipal:hover{
     box-shadow: var(--sombra-boton);
 }
 
-.encripta_botonSecundario{
+.encripta__botonSecundario{
     background-color: var(--background-letra-B);
     border: var(--borde-linea);
 }
 
-.encripta_botonSecundario:hover{
+.encripta__botonSecundario:hover{
     background-color: var(--principal);
     box-shadow: var(--sombra-boton);
 }
 
 /*Desencripta*/
 .desencripta{
-    position: relative;
-    width: 50%;
+    width: 100%;
+    height: 400px;
     display: flex;
     flex-direction: column;
     margin-left: var(--rem2);
@@ -112,12 +140,31 @@ button{
     padding: 5rem;
     border-bottom-left-radius: var(--border-radio);
     border-top-left-radius: var(--border-radio);
-    gap: var(--rem05)
-    
+    gap: var(--rem05);
 }
 
-.desencripta_img{
+.desencripta__text{
+    overflow: auto;
+}
+
+.desencripta__img{
     align-items: center;
     width: 300px;
 }
 
+/*---------------*/
+.ocultar{
+    display: none;
+}
+
+.desencripta__iconCopy{
+    width: 32px;
+    margin-bottom: var(--rem1);
+    cursor: pointer;
+    background-color: var(--background-letra-B);
+    transition: 0.4s all;
+}
+
+.desencripta__iconCopy:hover{
+    color: var(--principal);
+}

@@ -8,13 +8,17 @@
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;800&family=Roboto+Mono:wght@200;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 
     <!-- CSS -->
     <link rel="stylesheet" type="text/css" href="css/reset.css">
     <link rel="stylesheet" type="text/css" href="css/variables.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
 
+    
 
 
     
@@ -25,19 +29,22 @@
 <body>
     <div class="encriptador">
         <div class="encripta">
-            <img class="logo_alura" src="img/Vector-Alura.svg" alt="Logo-Alura">
-            <textarea id="ecripta" class="encripta-text" placeholder="Ingrese el texto aquí"></textarea>
-                <p class="encripta_grupo_p">* No ingresar caracteres especiales, solo letras minúsculas</p>
-                <div class="encripta_botones">
-                    <button class="encripta_botonPrincipal">Encriptar</button>
-                    <button class="encripta_botonSecundario">Desencriptar</button>
+            <img class="logo__alura" src="img/logo_alura.png" alt="Logo-Alura">
+            <textarea id="encripta" class="encripta__text" placeholder="Ingrese el texto aquí" autofocus></textarea>
+                <p class="encripta__grupo__p">* No ingresar caracteres especiales, solo letras minúsculas</p>
+                <div class="encripta__botones">
+                    <button id="btnEncripta" class="encripta__botonPrincipal" >Encriptar</button>
+                    <button id="btnDesencripta" class="encripta__botonSecundario">Desencriptar</button>
                 </div>
         </div>
 
         <div class="desencripta">
-            <img class="desencripta_img" src="img/NingunMensaje.png" alt="Imagen de duda">
-            <h2 class="desencripta_mensaje">Ningún mensaje fue encontrado</h2>
-            <p class="desencripta_text">Ingresa algún mensaje si deseas encriptar</p>
+            <div id="contenedor">
+                <img id="imgDuda" class="desencripta__img" src="img/NingunMensaje.png" alt="Imagen de duda">
+                <h2 class="desencripta__mensaje">Ningún mensaje fue encontrado</h2>
+            </div>
+            <span id="iconCopy" class="desencripta__iconCopy ocultar" class="material-symbols-outlined"></span>
+            <p id="resultado" class="desencripta__text">Ingresa algún mensaje si deseas encriptar</p>
         </div>
     </div>
 </body>
