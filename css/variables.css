@@ -1,10 +1,10 @@
 :root{
     /*Colores---------------------------------------------------------*/
     --principal: #3772ff;
-    --background-letra-N: #080708;
+    --background-letra-N: #1D293A;
     --background-letra-B :#fff;
 
-    --secundario-N: rgba(8, 7, 8, 0.70);
+    --secundario-N: rgba(29, 41, 58, 0.70);
     --secundario-B: #d9d9d9;
 
     /*Letra-----------------------------------------------------------*/
@@ -15,6 +15,9 @@
     --grande: 32px;
     --normal: 18px;
 
+    --grande-pc: 40px;
+    --normal-pc: 24px;
+
     --grande-m: 20px;
     --normal-m: 12px;
     --pequeño-m: 10px;
@@ -22,20 +25,18 @@
     /*Espacios--------------------------------------------------------*/
     --rem05: 0.5rem;
     --rem1: 1rem;
-    --rem1-5: 1.5rem;
+    --rem1-5:1.5rem;
     --rem2: 2rem;
+    --rem6: 6rem;
 
     /*Sobras y borders------------------------------------------------*/
-    --borde-linea: 3px solid #3772FF;
-    --border-radio: 40px; 
+    --borde-linea: 3px solid var(--principal);
+    --border-radio: 40px;
 
-    --sombra-principal: 1px 11px 57px 32px rgba(55, 114, 255, 0.30);
+    --sombra-principal: 1px 11px 57px 32px rgba(55, 114, 255, 0.20);
     --sombra-boton: 0px 4px 16px 7px rgba(55, 114, 255, 0.41);
 
-    --sombra-principal-T: 0px -8px 128px 0px rgba(55, 114, 255, 0.80);
-    --sombra-principal-M: 0px -6px 73px 0px #3772FF;
-
-
+    --sombra-principal-T: 
 
 
 }

@@ -4,7 +4,7 @@
 body{
     background-color: var(--background-letra-N);
     font-family: var(--font);
-    margin-top: var(--rem2);
+    margin-top: var(--rem2); /*-------------*/
     margin-bottom: var(--rem2);
     margin-left: var(--rem2);
 }
@@ -79,12 +79,16 @@ button{
     height: 48px;
 }
 
+.encripta__grupo__text{
+    display: flex;
+}
+
 .encripta__text{
     font-family: var(--font);
     background-color: transparent;
     border: none;
     font-size: var(--normal);
-    height: 350px;
+    height: 350px; /*-------------*/
     width: 600px;
     color: var(--background-letra-B);
     appearance: none;
@@ -106,29 +110,7 @@ button{
 .encripta__grupo__p > svg{
     margin-right: var(--rem05);
 }
-.desencripta__tooltip {
-    position: relative;
-    display: inline-block;
-    cursor: pointer;
-}
-.desencripta__tooltip:hover .desencripta__tooltiptext {
-    visibility: visible;
-}
-.desencripta__tooltiptext{
-    visibility: hidden;
-    background-color: var(--secundario-B);
-    color: var(--background-letra-N);
-    text-align: center;
-    border-radius: var(--border-radio);
-    padding: var(--rem05);
-    position: absolute;
-    z-index: 1;
-    bottom: 5%;
-    left: 20%;
-    margin-left: -60px;
-    opacity: 0.9;
-    transition: opacity 0.4s;
-}
+
 
 .encripta__botones{
     width: 100%;
@@ -157,12 +139,11 @@ button{
 
 /*Desencripta*/
 .desencripta{
-    width: 100%;
+    width: 100%; /*-----*/
     height: 400px;
     display: flex;
     flex-direction: column;
     margin-left: var(--rem2);
-    font: 1em sans-serif;
     background-color: var(--background-letra-B);
     box-shadow: var(--sombra-principal);
     padding: 5rem;
@@ -171,8 +152,32 @@ button{
     gap: var(--rem05);
 }
 
+.desencripta__tooltip {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+.desencripta__tooltip:hover .desencripta__tooltiptext {
+    visibility: visible;
+}
+.desencripta__tooltiptext{
+    visibility: hidden;
+    background-color: var(--secundario-B);
+    color: var(--background-letra-N);
+    text-align: center;
+    border-radius: var(--border-radio);
+    padding: var(--rem05);
+    position: absolute;
+    z-index: 1;
+    bottom: 5%;
+    left: 20%;
+    margin-left: -60px;
+    opacity: 0.9;
+    transition: opacity 0.4s;
+}
+
 .desencripta__text{
-    overflow: auto;
+    overflow: visible;
 }
 
 .desencripta__img{
@@ -193,6 +198,16 @@ button{
     transition: 0.4s all !important;
 }
 
-.desencripta__iconCopy:hover{
+.encripta__iconDelate{
+    width: 25px;
+    margin-top: 0.3rem;
+    margin-right: var(--rem05);
+    color: var(--background-letra-B);
+    cursor: pointer;
+    transition: 0.4s all !important;
+}
+
+.desencripta__iconCopy:hover,
+.encripta__iconDelate:hover{
     color: var(--principal);
 }

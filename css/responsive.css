@@ -1,0 +1,140 @@
+@import url('variables.css');
+
+@media screen and (min-width: 1920px) {
+    
+    /*General ----------------------------*/
+    h2{
+        font-size: var(--grande-pc);
+    }
+
+    p{
+        font-size: var(--normal-pc);
+    }
+
+    button{
+        font-size: var(--normal-pc);
+    }
+
+    body{
+        margin-top: var(--rem6);
+        margin-bottom: var(--rem6);
+        margin-left: var(--rem6);
+    }
+
+    /*--------------------------------------*/
+    .encripta__text{
+        height:  610px;
+        width: 600px;
+        font-size: var(--normal-pc);
+    }
+
+    .desencripta{
+        padding: 7rem;
+        height: 610px;
+    }
+
+    .desencripta__img{
+        width: 500px;
+    }
+}
+
+
+@media screen and (max-width: 1920px) {
+    
+    /*General ----------------------------*/
+    h2{
+        font-size: var(--grande-pc);
+    }
+
+    p{
+        font-size: var(--normal-pc);
+    }
+
+    button{
+        font-size: var(--normal-pc);
+    }
+
+    body{
+        margin-top: var(--rem6);
+        margin-bottom: var(--rem6);
+        margin-left: var(--rem6);
+    }
+
+    /*--------------------------------------*/
+    .encripta__text{
+        height:  610px;
+        width: 600px;
+        font-size: var(--normal-pc);
+    }
+
+    .desencripta{
+        padding: 7rem;
+        height: 610px;
+    }
+
+    .desencripta__img{
+        width: 500px;
+    }
+}
+
+@media screen and (max-width: 1564px) {
+    /*General ----------------------------*/
+    h2{
+        font-size: var(--grande);
+    }
+
+    p{
+        font-size: var(--normal);
+    }
+
+    button{
+        font-size: var(--normal);
+    }
+
+    /*----------------------------------*/
+    .encripta__text{
+        font-size: var(--normal);
+    }
+}
+
+@media screen and (max-width: 1564px) {
+    /*General ----------------------------*/
+    body{
+        margin-top: var(--rem2);
+        margin-bottom: var(--rem2);
+        margin-left: var(--rem2);
+    }
+
+}
+
+@media screen and (max-width: 769px) {
+
+    /*General ---------------------------*/
+    body{
+        margin-top: var(--rem2);
+        margin-right: var(--rem2);
+        margin-left: var(--rem2);
+        margin-bottom: 0;
+    }
+
+    /* -------------------------------*/
+    .encriptador{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .encripta__text{
+        height:  310px;
+        width: 600px;
+    }
+
+    .desencripta{
+        padding: 7rem;
+        height: 610px;
+    }
+
+    .desencripta__img{
+        width: 500px;
+    }
+
+}
