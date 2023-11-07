@@ -143,6 +143,7 @@ button{
     height: 400px;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     margin-left: var(--rem2);
     background-color: var(--background-letra-B);
     box-shadow: var(--sombra-principal);
@@ -177,7 +178,10 @@ button{
 }
 
 .desencripta__text{
-    overflow: visible;
+    overflow-y: auto; 
+    height: min-content; 
+    min-height: 2em; 
+    word-wrap: break-word; 
 }
 
 .desencripta__img{
