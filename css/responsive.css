@@ -20,63 +20,8 @@
         margin-bottom: var(--rem6);
         margin-left: var(--rem6);
     }
-
-    /*--------------------------------------*/
-    .encripta__text{
-        height:  610px;
-        width: 600px;
-        font-size: var(--normal-pc);
-    }
-
-    .desencripta{
-        padding: 7rem;
-        height: 610px;
-    }
-
-    .desencripta__img{
-        width: 500px;
-    }
 }
 
-
-@media screen and (max-width: 1920px) {
-    
-    /*General ----------------------------*/
-    h2{
-        font-size: var(--grande-pc);
-    }
-
-    p{
-        font-size: var(--normal-pc);
-    }
-
-    button{
-        font-size: var(--normal-pc);
-    }
-
-    body{
-        margin-top: var(--rem6);
-        margin-bottom: var(--rem6);
-        margin-left: var(--rem6);
-    }
-
-    /*--------------------------------------*/
-    .encripta__text{
-        height:  610px;
-        width: 600px;
-        font-size: var(--normal-pc);
-    }
-
-    .desencripta{
-        padding: 7rem;
-        height: 610px;
-    }
-
-    .desencripta__img{
-        width: 500px;
-    }
-
-}
 
 @media screen and (max-width: 1681px) {
     /*General ----------------------------*/
@@ -99,114 +44,14 @@
     }
 
     /*----------------------------------*/
-    .encripta__text{
-        font-size: var(--normal);
-        height:  360px;
-        width: 600px;
-    }
 
     .desencripta{
-        padding: 4rem;
-        height: 460px;
-    }
-
-    .desencripta__img{
-        width: 400px;
-    }
-}
-
-@media screen and (max-width: 1441px) {
-
-    /*----------------------------------*/
-    .encripta__text{
-        height:  380px;
-    }
-
-    .desencripta{
-        height: 450px;
-    }
-
-    .desencripta__img{
-        width: 380px;
-    }
-}
-
-@media screen and (max-width: 1025px) {
-
-    /*----------------------------------*/
-    .encripta__text{
-        height:  450px;
-        width: 470px;
-    }
-
-    .encripta__botones{
-        gap: 2rem;
-    }
-    .desencripta{
-        padding: var(--rem2);
-        height: 600px;
-    }
-
-    .desencripta__img{
-        width: 280px;
-    }
-}
-
-@media screen and (max-width: 769px) {
-
-    /*General ---------------------------*/
-    body{
-        margin-top: var(--rem2);
-        margin-right: var(--rem2);
-        margin-left: var(--rem2);
-        margin-bottom: 0;
-    }
-
-    /* -------------------------------*/
-    .encriptador{
-        display: flex;
-        flex-direction: column;
-        gap: 2rem;
-    }
-    
-    .encripta__text{
-        height:  310px;
-        width: 520px;
-    }
-
-    .desencripta{
-        width: auto; /*-----*/
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        margin-left: 0;
-        padding: 5rem;
-        border-bottom-left-radius: 0;
-        border-top-right-radius: var(--border-radio);
-    }
-
-    .desencripta__img{
-        width: 500px;
+        padding: 3rem;
     }
 
 }
 
-
-@media screen and (max-width: 698px) {
-    .encripta__text{
-        width: 420px;
-    }
-    .desencripta__img{
-        width: 300px;
-    }
-
-    .desencripta{
-        height: 400px;
-    }
-
-}
-
-@media screen and (max-width: 518px) {
+@media screen and (max-width: 1280px) {
     /*General ----------------------------*/
     h2{
         font-size: var(--grande-m);
@@ -231,6 +76,61 @@
     .desencripta__img{
         width: 200px;
     }
+    /*----------------------------------*/
+
+    .desencripta__img{
+        width: 100%;
+    }
+}
+
+/* MOVILE-----------------------------------------------------*/
+
+@media screen and (max-width: 600px) {
+
+    /*General ---------------------------*/
+    body{
+        margin-top: var(--rem2);
+        margin-right: var(--rem2);
+        margin-left: var(--rem2);
+        margin-bottom: 0;
+    }
+
+    /* -------------------------------*/
+    .encriptador{
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+    
+    .encripta{
+        width: 100%;
+    }
+
+    .encripta__text{
+        width: calc(100vw - 4 * var(--rem2));
+    }
+
+    .desencripta{
+        width: auto; /*-----*/
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-left: 0;
+        padding: 5rem;
+        border-bottom-left-radius: 0;
+        border-top-right-radius: var(--border-radio);
+    }
+
+    .desencripta__img{
+        width: 70%;
+    }
+
+}
+
+
+
+@media screen and (max-width: 518px) {
+    
 
 }
 
@@ -246,11 +146,10 @@
 
 @media screen and (max-width: 321px) {
     .encripta__text{
-        height:  260px;
-        width: 200px;
+        width: 270px;
     }
     .desencripta__img{
-        width: 150px;
+        width: 200px;
     }
 
-}
+} */

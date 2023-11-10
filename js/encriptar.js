@@ -1,12 +1,16 @@
 
+/* VARIABLE------------------------------------------------*/
 var btnEncripta = document.getElementById("btnEncripta");
 var btnDesencripta = document.getElementById("btnDesencripta");
 
 var contenedor = document.getElementById("contenedor");
-var iconCopy = document.getElementById("iconCopy");
-
-var texto = document.getElementById("encripta");
+var texto = document.getElementById("encripta");/*EncriptaTextArea */
 var resultado = document.getElementById("resultado");
+
+var iconCopy = document.getElementById("iconCopy");
+var tooltipContainer = document.getElementById("tooltipContainer");
+var iconDelete = document.getElementById("iconDelete");
+
 
 /*Texto encriptado*/
 var remplazar = [
@@ -72,8 +76,8 @@ btnDesencripta.addEventListener("click", () => {
     }
 });   
 
-
-iconCopy.addEventListener("click", copiar = ()=>{
+/*ICONO COPIAR-------------------------------------------------*/
+iconCopy.addEventListener("click", () => {
     const text = resultado; 
     const range = document.createRange();/*rango dde seleccion*/
     range.selectNode(text);
@@ -83,12 +87,19 @@ iconCopy.addEventListener("click", copiar = ()=>{
 
     document.execCommand('copy');/*copiar*/
     window.getSelection().removeAllRanges();
+
+    mostrarTooltip();
 })
 
 const mostrarTooltip = ()=>{
-    iconCopy.style.visibility = "visible";
+    tooltipContainer.classList.add("iconVisible");
     setTimeout(() => {
-        iconCopy.style.visibility = "hidden";
-    }, 2000); 
+        tooltipContainer.classList.remove("iconVisible");
+    }, 2000);
 }
+
+/*ICONO ELIMINAR*/
+iconDelete.addEventListener("click", () => {
+    texto.value = "";
+})
 
