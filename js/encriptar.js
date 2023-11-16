@@ -21,7 +21,23 @@ var remplazar = [
     ["u", "ufat"],
 ]
 
+document.addEventListener("DOMContentLoaded", () => {
+    var textarea = document.getElementById("encripta");
 
+    textarea.addEventListener("input", () => {
+        var inputValue = textarea.value;
+        var regex = /^[a-z]+$/;
+
+        if (!regex.test(inputValue)) {
+            mostrarAviso();
+            textarea.value = inputValue.replace(/[^a-z]/g, '');
+        }
+    });
+});
+
+const mostrarAviso = () => {
+    alert("Solo se permiten letras minúsculas. Los caracteres no permitidos serán eliminados.");
+}
 
 const alEncriptar = (nuevoValor)=>{
     contenedor.classList.add("ocultar");
@@ -53,6 +69,7 @@ btnEncripta.addEventListener("click", () => {
         alert("Ingrese texto para encriptar")
         alDesencriptar();
     }
+
 });
 
 btnDesencripta.addEventListener("click", () => {

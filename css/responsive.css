@@ -114,9 +114,8 @@
         width: auto; /*-----*/
         display: flex;
         flex-direction: column;
-        justify-content: center;
         margin-left: 0;
-        padding: 5rem;
+        padding: 2rem;
         border-bottom-left-radius: 0;
         border-top-right-radius: var(--border-radio);
     }

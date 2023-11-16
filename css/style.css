@@ -149,7 +149,6 @@ button{
     height: 62vh;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     background-color: var(--background-letra-B);
     box-shadow: var(--sombra-principal);
     padding: 5rem;
@@ -190,11 +189,11 @@ button{
 }
 
 
-.desencripta__text{
+.desencripta__text {
     overflow: auto;
-    height: min-content; 
-    min-height: 2em; 
-    word-wrap: break-word; 
+    height: auto; /* Puedes omitir esta línea ya que 'auto' es el valor por defecto para height */
+    min-height: 2rem; 
+    word-wrap: break-word;
 }
 
 .desencripta__img{
