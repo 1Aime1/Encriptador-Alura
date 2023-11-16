@@ -26,11 +26,11 @@ document.addEventListener("DOMContentLoaded", () => {
 
     textarea.addEventListener("input", () => {
         var inputValue = textarea.value;
-        var regex = /^[a-z]+$/;
+        var regex = /^[a-z\s]+$/;
 
         if (!regex.test(inputValue)) {
             mostrarAviso();
-            textarea.value = inputValue.replace(/[^a-z]/g, '');
+            textarea.value = inputValue.replace(/[^a-z\s]/g, '');
         }
     });
 });
