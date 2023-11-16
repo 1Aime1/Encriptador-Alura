@@ -65,6 +65,8 @@
         font-size: var(--normal-m);
     }
 
+    /*----------------------------------*/
+    
     .desencripta{
         padding: 2rem;
     }
@@ -72,14 +74,16 @@
     .encripta__text{
         font-size: var(--normal-m);
         width: 320px;
+        height: 35vh;
     }
     .desencripta__img{
-        width: 200px;
+        width: 300px;
     }
-    /*----------------------------------*/
+}
 
+@media screen and (max-width: 1080px){
     .desencripta__img{
-        width: 100%;
+        width: 90%;
     }
 }
 
@@ -114,9 +118,8 @@
         width: auto; /*-----*/
         display: flex;
         flex-direction: column;
-        justify-content: center;
         margin-left: 0;
-        padding: 5rem;
+        padding: 2rem;
         border-bottom-left-radius: 0;
         border-top-right-radius: var(--border-radio);
     }
@@ -127,12 +130,6 @@
 
 }
 
-
-
-@media screen and (max-width: 518px) {
-    
-
-}
 
 @media screen and (max-width: 518px) {
     .encripta__text{
@@ -152,4 +149,4 @@
         width: 200px;
     }
 
-} */
+} 
