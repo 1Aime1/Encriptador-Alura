@@ -36,7 +36,7 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 const mostrarAviso = () => {
-    alert("Solo se permiten letras minúsculas. Los caracteres no permitidos serán eliminados.");
+    alert("Solo se permiten letras minúsculas y espacios. Los caracteres no permitidos serán eliminados.");
 }
 
 const alEncriptar = (nuevoValor)=>{
